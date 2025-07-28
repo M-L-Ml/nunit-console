@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TestCentric.Metadata" Version="3.0.3" />
+    <PackageReference Include="TestCentric.Metadata" Version="3.0.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="nunit.extensibility.tests, PublicKey=$(NUnitPublicKey)"/>
+    <InternalsVisibleTo Include="nunit.extensibility.tests, PublicKey=$(NUnitPublicKey)" />
   </ItemGroup>
 
 </Project>
