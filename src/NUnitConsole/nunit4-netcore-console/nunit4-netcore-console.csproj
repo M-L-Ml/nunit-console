@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NUnit.ConsoleRunner</RootNamespace>
     <AssemblyName>nunit-netcore-console</AssemblyName>
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
