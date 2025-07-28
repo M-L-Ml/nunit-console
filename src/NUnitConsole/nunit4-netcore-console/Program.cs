@@ -98,7 +98,7 @@ namespace NUnit.ConsoleRunner
                         engine.WorkDirectory = Options.WorkDirectory;
 
                     engine.InternalTraceLevel = Options.InternalTraceLevel is not null
-                        ? (InternalTraceLevel)Enum.Parse(typeof(InternalTraceLevel), Options.InternalTraceLevel)
+                        ? Enum.Parse<InternalTraceLevel>(Options.InternalTraceLevel)
                         : InternalTraceLevel.Off;
 
                     try
