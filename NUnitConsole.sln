@@ -17,7 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		BUILDING.md = BUILDING.md
 		CHANGES.txt = CHANGES.txt
 		CONTRIBUTING.md = CONTRIBUTING.md
-		CopyAgentFiles.bat = CopyAgentFiles.bat
 		src\Directory.Build.props = src\Directory.Build.props
 		GitReleaseManager.yaml = GitReleaseManager.yaml
 		GitVersion.yml = GitVersion.yml
@@ -37,7 +36,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{A972031D-2F61-4183-AF75-99EE1A9F6B32}"
 	ProjectSection(SolutionItems) = preProject
-		nuget\nunit.agent.addins = nuget\nunit.agent.addins
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NUnitEngine", "NUnitEngine", "{31B45C4C-206F-4F31-9CC6-33BF11DFEE39}"
@@ -69,9 +67,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "runners", "runners", "{F3E8
 		nuget\runners\nunit.console-runner.nuspec = nuget\runners\nunit.console-runner.nuspec
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mock-assembly", "src\NUnitEngine\mock-assembly\mock-assembly.csproj", "{D2C80E4B-1117-4F02-AB02-E453BDA0C58E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mock-assembly", "src\TestData\mock-assembly\mock-assembly.csproj", "{D2C80E4B-1117-4F02-AB02-E453BDA0C58E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "notest-assembly", "src\NUnitEngine\notest-assembly\notest-assembly.csproj", "{B1D90742-39BD-429C-8E87-C5CD2991DF27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "notest-assembly", "src\TestData\notest-assembly\notest-assembly.csproj", "{B1D90742-39BD-429C-8E87-C5CD2991DF27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "choco", "choco", "{4FDF7BFA-A337-41D3-898D-C6A98278E6AD}"
 	ProjectSection(SolutionItems) = preProject
@@ -89,9 +87,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deprecated", "deprecated", 
 		nuget\deprecated\nunit.runners.nuspec = nuget\deprecated\nunit.runners.nuspec
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit-agent-x86", "src\NUnitEngine\nunit-agent-x86\nunit-agent-x86.csproj", "{333D2FBC-CCA7-46AF-9453-C310671A67B0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mock-assembly-x86", "src\NUnitEngine\mock-assembly-x86\mock-assembly-x86.csproj", "{9D3015EE-5B84-41B3-A1D3-1A439370C392}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mock-assembly-x86", "src\TestData\mock-assembly-x86\mock-assembly-x86.csproj", "{9D3015EE-5B84-41B3-A1D3-1A439370C392}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deprecated", "deprecated", "{068F6CA9-6108-4F45-8540-351AA5227259}"
 	ProjectSection(SolutionItems) = preProject
@@ -210,10 +206,6 @@ Global
 		{B1D90742-39BD-429C-8E87-C5CD2991DF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D90742-39BD-429C-8E87-C5CD2991DF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1D90742-39BD-429C-8E87-C5CD2991DF27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{333D2FBC-CCA7-46AF-9453-C310671A67B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{333D2FBC-CCA7-46AF-9453-C310671A67B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{333D2FBC-CCA7-46AF-9453-C310671A67B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{333D2FBC-CCA7-46AF-9453-C310671A67B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D3015EE-5B84-41B3-A1D3-1A439370C392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D3015EE-5B84-41B3-A1D3-1A439370C392}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D3015EE-5B84-41B3-A1D3-1A439370C392}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -310,14 +302,6 @@ Global
 		{E3A8037B-83EF-CB79-3EED-492C89F47BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3A8037B-83EF-CB79-3EED-492C89F47BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3A8037B-83EF-CB79-3EED-492C89F47BF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{472314FE-1F18-4359-B620-FF20BF3AF553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{472314FE-1F18-4359-B620-FF20BF3AF553}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{472314FE-1F18-4359-B620-FF20BF3AF553}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{472314FE-1F18-4359-B620-FF20BF3AF553}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25FFAF61-C456-4BF9-87BE-34930F22B669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25FFAF61-C456-4BF9-87BE-34930F22B669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25FFAF61-C456-4BF9-87BE-34930F22B669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25FFAF61-C456-4BF9-87BE-34930F22B669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -333,7 +317,6 @@ Global
 		{B1D90742-39BD-429C-8E87-C5CD2991DF27} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
 		{4FDF7BFA-A337-41D3-898D-C6A98278E6AD} = {49D441DF-39FD-4F4D-AECA-86CF8EFE23AF}
 		{9A7C8370-ED1F-486F-A8F5-C5BF4221464E} = {A972031D-2F61-4183-AF75-99EE1A9F6B32}
-		{333D2FBC-CCA7-46AF-9453-C310671A67B0} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
 		{9D3015EE-5B84-41B3-A1D3-1A439370C392} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
 		{9D3015EE-5B84-41B3-A1D3-1A439370C392} = {37D508B2-91E0-4B32-869B-DFF9E68EA213}
 		{068F6CA9-6108-4F45-8540-351AA5227259} = {4FDF7BFA-A337-41D3-898D-C6A98278E6AD}
@@ -365,16 +348,11 @@ Global
 		{3AA135F1-CF80-C1D9-89FF-1DF30F567CA1} = {37D508B2-91E0-4B32-869B-DFF9E68EA213}
 		{E3A8037B-83EF-CB79-3EED-492C89F47BF9} = {37D508B2-91E0-4B32-869B-DFF9E68EA213}
 		{C3D1ADBF-7497-4725-8AE4-6B4693F68622} = {49D441DF-39FD-4F4D-AECA-86CF8EFE23AF}
-		{472314FE-1F18-4359-B620-FF20BF3AF553} = {576DB1E6-C5EC-4FEF-A826-EC19D8BEE572}
-		{25FFAF61-C456-4BF9-87BE-34930F22B669} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8E4FC26-5422-4C51-8BBC-D1AC0A578711}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = src\NUnitFramework\tests\nunitlite.tests-2.0.csproj
-		{28B605B2-E2E9-417E-8369-49E263F1F31B} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
-		{FFF45826-991F-465B-8A03-0E1DB7E8F38C} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
-		{11640C9F-03A3-456B-848D-9B4A126F9506} = {31B45C4C-206F-4F31-9CC6-33BF11DFEE39}
 	EndGlobalSection
 EndGlobal
