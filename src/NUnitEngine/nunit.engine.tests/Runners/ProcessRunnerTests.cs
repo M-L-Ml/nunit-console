@@ -21,7 +21,7 @@ namespace NUnit.Engine.Runners
 #if TESTAGENCY_INTEGRATION
     [TestFixture("net462")]
     [TestFixture("net35")]
-    [TestFixture("net8.0")]
+    [TestFixture("net9.0")]
     [TestFixture("net7.0")]
     [TestFixture("net6.0")]
     [TestFixture("netcoreapp3.1")]

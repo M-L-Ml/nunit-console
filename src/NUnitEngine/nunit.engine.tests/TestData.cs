@@ -7,8 +7,8 @@ namespace NUnit.Engine
 {
     internal class TestData
     {
-#if NET8_0
-        private const string CURRENT_RUNTIME = "net8.0";
+#if NET9_0
+        private const string CURRENT_RUNTIME = "net9.0";
 #else
         private const string CURRENT_RUNTIME = "net462";
 #endif
