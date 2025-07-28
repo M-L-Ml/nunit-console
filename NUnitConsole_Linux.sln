@@ -15,23 +15,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		build.sh = build.sh
 		BUILDING.md = BUILDING.md
 		CHANGES.txt = CHANGES.txt
-		ci.cake = ci.cake
 		CONTRIBUTING.md = CONTRIBUTING.md
 		CopyAgentFiles.bat = CopyAgentFiles.bat
 		src\Directory.Build.props = src\Directory.Build.props
 		GitReleaseManager.yaml = GitReleaseManager.yaml
 		GitVersion.yml = GitVersion.yml
 		global.json = global.json
-		header-check.cake = header-check.cake
 		LICENSE.txt = LICENSE.txt
 		NetFXTests.nunit = NetFXTests.nunit
 		NOTICES.txt = NOTICES.txt
 		NuGet.config = NuGet.config
 		nunit.ico = nunit.ico
-		package-checks.cake = package-checks.cake
-		package-tests.cake = package-tests.cake
 		README.md = README.md
-		test-results.cake = test-results.cake
 		VERSIONING.md = VERSIONING.md
 	EndProjectSection
 EndProject
@@ -114,11 +109,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deprecated", "deprecated", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cake", "cake", "{9BCA00E2-D072-424B-A6DF-5BECF719C1FB}"
 	ProjectSection(SolutionItems) = preProject
-		cake\constants.cake = cake\constants.cake
-		cake\header-check.cake = cake\header-check.cake
-		cake\package-checks.cake = cake\package-checks.cake
-		cake\package-definitions.cake = cake\package-definitions.cake
-		cake\package-tester.cake = cake\package-tester.cake
 		cake\package-tests.cake = cake\package-tests.cake
 		cake\test-results.cake = cake\test-results.cake
 		cake\utilities.cake = cake\utilities.cake
