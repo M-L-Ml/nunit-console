@@ -1,4 +1,4 @@
-﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
+// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using NUnit.Engine;
 using System;
@@ -75,7 +75,7 @@ namespace NUnit.Agents
                     else if (opt == "debug-tests")
                         DebugTests = true;
                     else if (opt == "trace")
-                        TraceLevel = (InternalTraceLevel)Enum.Parse(typeof(InternalTraceLevel), val.ShouldNotBeNull());
+                        TraceLevel = Enum.Parse<InternalTraceLevel>(val.ShouldNotBeNull());
                     else if (opt == "pid")
                         AgencyPid = val.ShouldNotBeNull();
                     else if (opt == "work")
