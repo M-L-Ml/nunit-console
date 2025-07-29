@@ -75,7 +75,11 @@ namespace NUnit.Agents
                     else if (opt == "debug-tests")
                         DebugTests = true;
                     else if (opt == "trace")
+#if NETFRAMEWORK
+                        TraceLevel = (InternalTraceLevel)Enum.Parse(typeof(InternalTraceLevel), val.ShouldNotBeNull());
+#else
                         TraceLevel = Enum.Parse<InternalTraceLevel>(val.ShouldNotBeNull());
+#endif
                     else if (opt == "pid")
                         AgencyPid = val.ShouldNotBeNull();
                     else if (opt == "work")
