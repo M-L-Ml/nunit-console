@@ -344,7 +344,7 @@ namespace NUnit.Engine.Services
                         targetVersion = assembly.GetRuntimeVersion();
                         log.Debug($"Assembly {packageName} uses version {targetVersion}");
 
-                        frameworkName = assembly.GetFrameworkName();
+                        assembly.TryGetFrameworkName(out frameworkName);
                         log.Debug($"Assembly {packageName} targets {frameworkName}");
 
                         if (assembly.RequiresX86())
