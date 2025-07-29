@@ -1,4 +1,4 @@
-﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
+// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
 using System.Collections.Generic;
@@ -629,8 +629,7 @@ namespace NUnit.Extensibility
         private static System.Runtime.Versioning.FrameworkName GetTargetRuntime(string filePath)
         {
             var assemblyDef = AssemblyDefinition.ReadAssembly(filePath);
-            var frameworkName = assemblyDef.GetFrameworkName();
-            if (string.IsNullOrEmpty(frameworkName))
+            if (!assemblyDef.TryGetFrameworkName(out var frameworkName) || string.IsNullOrEmpty(frameworkName))
             {
                 var runtimeVersion = assemblyDef.GetRuntimeVersion();
                 frameworkName = $".NETFramework,Version=v{runtimeVersion.ToString(3)}";

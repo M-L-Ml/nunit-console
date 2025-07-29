@@ -1,4 +1,4 @@
-﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
+// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
 using System.IO;
@@ -48,8 +48,7 @@ namespace NUnit.Extensibility
         {
             get
             {
-                var framework = Assembly.GetFrameworkName();
-                if (framework is not null)
+                if (Assembly.TryGetFrameworkName(out var framework) && framework is not null)
                     return new FrameworkName(framework);
 
                 // No TargetFrameworkAttribute - Assume .NET Framework
