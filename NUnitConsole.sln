@@ -73,8 +73,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "choco", "choco", "{4FDF7BFA
 		choco\nunit-agent-x86.exe.ignore = choco\nunit-agent-x86.exe.ignore
 		choco\nunit-agent.exe.ignore = choco\nunit-agent.exe.ignore
 		choco\nunit-console-runner.nuspec = choco\nunit-console-runner.nuspec
-		choco\nunit.agent.addins = choco\nunit.agent.addins
-		choco\nunit.choco.addins = choco\nunit.choco.addins
 		choco\VERIFICATION.txt = choco\VERIFICATION.txt
 	EndProjectSection
 EndProject
