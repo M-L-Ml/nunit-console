@@ -6,7 +6,10 @@
     <AssemblyName>nunit-netcore-console</AssemblyName>
     <TargetFrameworks>net9.0</TargetFrameworks>
   </PropertyGroup>
-
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+  </ItemGroup>
+  
   <ItemGroup>
     <InternalsVisibleTo Include="nunit4-console.tests, PublicKey=$(NUnitPublicKey)" />
     <InternalsVisibleTo Include="DynamicProxyGenAssembly2, PublicKey=$(NSubstitutePublicKey)" />
@@ -38,6 +41,14 @@
 
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0|AnyCPU'">
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,6 +1,7 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using NUnit.ConsoleRunner.Options;
@@ -33,8 +34,8 @@ namespace NUnit.ConsoleRunner
         [STAThread]
         public static int Main(string[] args)
         {
+            AppContext.SetSwitch("System.Drawing.EnableUnixSupport", true);
             Console.CancelKeyPress += new ConsoleCancelEventHandler(CancelHandler);
-
             try
             {
                 Options.Parse(Options.PreParse(args));
